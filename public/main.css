@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+	font-family: ‘Noto Sans TC’, sans-serif;
+	font-weight: 400;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#main {
+	position: relative;
+	width: 66%;
+	height: 100%; 
+	overflow:hidden;!important;
+	padding: 1em 2em 2em 2em;
+	margin: auto;
+	border-radius: 20px;
+	border: 2px solid #DDD;
+	background: linear-gradient(rgba(16, 16, 16, 1) 50%,rgba(16, 16, 16, 0.3) 0%);
+	background-size: 100%  0.5em;
+}
+
+#main h1 {
+	color: #DDD;
+	text-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.33);
+	text-align: center;
+}
+#main h2 {
+	color: #DDD;
+	margin-top: -1em;
+	text-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.33);
+	text-align: center;
+}
+
+#main hr {
+	color: #DDD;
+	box-shadow: 0em 0em 0.3em rgba(255, 255, 255, 0.33);
+}
+
+#main #msgBlock {
+	width: 62%;
+	margin-left: 2%;
+	height: 100%; 
+	background-color: #111;
+
+}
+
+#main #msgBlock #msg {
+	position: relative;
+	width: 100%;
+	height: 100%; 
+	background-color: #DDD;
+	padding: 0em 2em 1.5em 2em;
+	margin-bottom: 40px;
+	float: left;
+	border: 2px solid #FFF;
+	box-shadow: 2px 2px 2px 2px rgba(16, 16, 16, 0.8);
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+#main #msgBlock #msg:before {
+	border-color: #FFF transparent transparent transparent;
+	border-style: solid solid solid solid;
+	border-width: 18px calc(1vw + 2px) 18px calc(1vw + 2px);
+	bottom: -36px;
+	content: "";
+	height: 0px;
+	left: calc(85%);
+	position: absolute;
+	width: 0px;
+}
+
+#main #msgBlock #msg:after {
+	border-color: #DDD transparent transparent transparent;
+	border-style: solid solid solid solid;
+	border-width: 16px 1vw 16px 1vw;
+	bottom: -32px;
+	content: "";
+	height: 0px;
+	left: calc(85% + 2px);
+	position: absolute;
+	width: 0px;
+}
+
+
+
+#main #msgBlock #msg h3 {
+	background-color: rgba(255, 255, 255, 0);
+	padding-bottom: 0.5em;
+	border-bottom: 2px solid #AAA;
+
+}
+
+#main #msgBlock #msg #content {
+	background-color: rgba(255, 255, 255, 0);
+
+}
+
+#main #msgBlock #msg #timestamp {
+	background-color: rgba(255, 255, 255, 0);
+	text-align: right;
+
+}
+
+
+#main #msgBlock #msg:hover {
+	background-color: #4caf50;
+}
+#main #msgBlock #msg:hover:after {
+	border-color: #4caf50 transparent transparent transparent;
+}
+
+#main #msgBlock #msg:hover #content {
+	color: #FFF;
+}
+#main #msgBlock #msg:hover h3 {
+	color: #FFF;
+	border-bottom: 2px solid #FFF;
+}
+#main #msgBlock #msg:hover #timestamp {
+	color: #FFF;
+}
+
+
+
+
+#main #slidebar {
+	position: relative;
+	left: 70%;
+	width: 26%;
+	height: 29em;
+	background-color: #DDD;
+	margin: 0em 2em 2em 0.3em;
+	padding: 2em 0em 0em 0.2em;
+	border-radius: 15px;
+	border: 2px solid #FFF;
+	box-shadow: 0px 0px 4px 4px #111;
+}
+#main #slidebar #status {
+	position: absolute;
+}
+
+#main #slidebar #status #header {
+	width: 50%;
+	height: 50%;
+	margin: 0% 0% 0% 24.2%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 4px #111;
+	text-align: center;
+}
+
+#main #slidebar #status h3 {
+	text-align: center;
+}
+
+#main #slidebar #status .middle {
+	width: 100%;
+	padding: 0.5em;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	text-align: center;
+}
+
+#main #send {
+	position: relative;
+	background-color: #4CAF50;
+	border: none;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 0.5em;
+	width: 57%;
+	text-align: center;
+	margin: 0% 21% 0% 21%;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+#main  #send:hover {
+	background-color: #3e8e41;
+}
+
+#main  #send:after {
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+
+#main  #send:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+	-webkit-transition: 0s;
+	-moz-transition: 0s;
+	-o-transition: 0s;
+}
+
+#blackBack {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgba(0,0,0,0.75); 
+	-webkit-animation-name: blackBackfadeIn; 
+	-webkit-animation-duration: 0.4s;
+	animation-name: blackBackfadeIn;
+	animation-duration: 0.4s
+}
+
+#blackBack #sendMsgBlock {
+	position: absolute;
+	left: 34%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1; 
+	padding: 0em 1em 1em 1em; 
+	width: 34%; 
+	height: 14em;
+	background-color: rgb(208, 208, 208);
+	border: 2px solid #FFF;
+	border-radius: 25px;
+	-webkit-animation-name: sendMsgBlockfadeIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: sendMsgBlockfadeIn;
+	animation-duration: 0.4s
+
+}
+
+
+@-webkit-keyframes blackBackfadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+
+@-webkit-keyframes blackBackfadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+
+@-webkit-keyframes sendMsgBlockfadeIn {
+	from {opacity: 0; transform: scale(0.9) translateY(-20%);} 
+	to {opacity: 1; transform: scale(1) translateY(-50%);}
+}
+
+@keyframes sendMsgBlockfadeIn {
+	from {opacity: 0; transform: scale(0.9) translateY(-20%);} 
+	to {opacity: 1; transform: scale(1) translateY(-50%);}
+}
+
+#main #sendMsgBlock #msgContent {
+	width: 90%;
+	height: 5em;
+	font-size: 18px;
+	margin: 0em 0% 1em 5%;
+	resize: none;
+}
+
+#main #sendMsgBlock #sendButton {
+	float: right;
+	margin: 0 2em 0 0;
+}
+
+#main #sendMsgBlock #close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 1% 0 0 0 ;
+}
+
+#main #sendMsgBlock #close:hover,
+#close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}

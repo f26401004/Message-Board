@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Message Board v1.0.0</title>
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div id="main" onload="startTime()">
+			<h1>小菌菌的留言板</h1>
+			<h2>v1.0.0</h2>
+			<hr></hr>
+			</br>
+			<div id="msgBlock">
+				<div id="msg">
+					<h3> 系統公告 </h3>
+					<p id="content">
+					留言板 v1.0.0 測試版本 <br>
+					練習使用 node.js & mongoDB 建立簡單的留言板功能，並且順便練習簡單的 HTML + CSS + javascript，
+					使用工具如下：<br>
+					1. vim <br>
+					2. node.js <br>
+					3. mongoDB <br>
+					4. mongoose <br>
+					拜託大家不要攻擊這個留言板，我只是拿來練習用的而已QQ
+					</p>
+					<p id="timestamp"> 2018/01/30 16:14:20</p>
+				</div>
+
+			</div>
+
+			<div id="slidebar">
+				<div id="status">
+
+					<img src="http://i.imgur.com/gpDb6Km.png" id="header" />
+					<h3>黃俊豪</h3>
+					<hr></hr>
+					<div class="middle">
+						<div id="time"></div>
+						<p>
+						留言板 v1.0.0 測試版本 </br> 目前可以丟訊息到 database 並且儲存，更新完 database 後顯示到目前的留言板上。 </br> 如果有任何問題麻煩幫忙回報 QQ 我會感恩您ㄉ </br>
+						</p>
+					</div>
+
+					<button id="send">留言給我</button>
+
+				</div>
+
+			</div>
+
+			<div id="blackBack">
+				<div id="sendMsgBlock">
+					<span id="close">&times;</span>
+					<h3>我要留言......</h3>
+					<form action="/save" method="post" id="form">
+						<textarea id="msgContent"></textarea>
+						</br>
+						<input type="button" value="送出留言" id="sendButton" onClick="formsubmit()"></input>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js" ></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</html>
